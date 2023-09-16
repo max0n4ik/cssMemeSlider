@@ -1,6 +1,8 @@
 const dots = document.querySelectorAll('.dots'),
-	sliderLine = document.querySelector('.about__gallery_slayder')
+	sliderLine = document.querySelector('.about__gallery_slayder'),
+	text = document.querySelector(".text_block")
 let pos = 0,
+	post = 0,
 	dotIndex = 0;
 
 
@@ -8,6 +10,7 @@ const nextSlide = () => {
 	if (screen.width >= 1440) {
 		if (pos < (dots.length - 1) * 476) {
 			pos += 476
+
 		} else {
 			pos = -930
 		}
@@ -20,6 +23,7 @@ const nextSlide = () => {
 		}
 	}
 	sliderLine.style.left = pos + 'px'
+	text.style.left = pos + 'px'
 	thisSlide(dotIndex)
 }
 const prevSlide = () => {
@@ -38,6 +42,7 @@ const prevSlide = () => {
 		}
 	}
 	sliderLine.style.left = pos + 'px'
+	text.style.left = pos + 'px'
 	thisSlide(dotIndex)
 }
 const thisSlide = (index) => {
@@ -51,6 +56,7 @@ dots.forEach((dot, index) => {
 	dot.addEventListener('click', () => {
 		pos = 560 * index
 		sliderLine.style.left = -pos + 'px'
+		text.style.left = -pos + 'px'
 		dotIndex = index
 		thisSlide(dotIndex)
 	})

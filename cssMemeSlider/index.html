@@ -13,51 +13,65 @@
 </head>
 
 <body>
-	<header>
-
-	</header>
 	<main>
-		<div class="slayder">
-			<div class="window_slayder">
-				<div class="about__gallery_slayder">
-					<div><img src="assets/meme-1.jpg" alt="meme-1" /></div>
-					<div><img src="assets/meme-2.jpg" alt="meme-2" /></div>
-					<div><img src="assets/meme-3.jpg" alt="meme-3" /></div>
-					<div><img src="assets/meem-4.jpg" alt="meem-4" /></div>
-					<div><img src="assets/meme-5.jpg" alt="meme-5" /></div>
-				</div>
-			</div>
-			<div class="under_section">
-				<div class="window_text">
-					<div class="text_block">
-						<div>
-							<p>JS: console.log()</p>
-						</div>
-						<div>
-							<p>Может попробывать открыть в Яндексе?</p>
-						</div>
-						<div>
-							<p>Хитро!</p>
-						</div>
-						<div>
-							<p>Почему я уже похож на мидла</p>
-						</div>
-						<div>
-							<p>sudo rm —rf / 💀💀💀</p>
-						</div>
+		<div class="slayder-box">
+			<div class="slayder">
+				<input type="radio" name="point" id="slide1" checked>
+				<input type="radio" name="point" id="slide2">
+				<input type="radio" name="point" id="slide3">
+				<input type="radio" name="point" id="slide4">
+				<input type="radio" name="point" id="slide5">
+
+				<div id="slider" class="slider-box">
+					<div class="slider">
+						<div class="slides slide1"><img src="/assets/meme-1.png" alt=""></div>
+						<div class="slides slide2"><img src="/assets/meme-2.png" alt=""></div>
+						<div class="slides slide3"><img src="/assets/meme-3.png" alt=""></div>
+						<div class="slides slide4"><img src="/assets/meem-4.png" alt=""></div>
+						<div class="slides slide5"><img src="/assets/meme-5.png" alt=""></div>
 					</div>
 				</div>
-				<div class="about__dots">
-					<button class="dots dots_active"></button>
-					<button class="dots"></button>
-					<button class="dots"></button>
-					<button class="dots"></button>
-					<button class="dots"></button>
+				<div id="labels" class="slider-text-box">
+					<div class="text-box">
+						<div class="slider-text">
+							<div class="slides text1">
+								<p>JS: console.log()</p>
+							</div>
+							<div class="slides text2">
+								<p>Может попробывать открыть в Яндексе?</p>
+							</div>
+							<div class="slides text3">
+								<p>Хитро!</p>
+							</div>
+							<div class="slides text4">
+								<p>Почему я уже похож на мидла</p>
+							</div>
+							<div class="slides text5">
+								<p>sudo rm —rf / 💀💀💀</p>
+							</div>
+						</div>
+					</div>
+					<div id="paggination" class="about__dots">
+						<label for="slide1" class="pagg">
+							<div class="dots"></div>
+						</label>
+						<label for="slide2" class="pagg">
+							<div class="dots"></div>
+						</label>
+						<label for="slide3" class="pagg">
+							<div class="dots"></div>
+						</label>
+						<label for="slide4" class="pagg">
+							<div class="dots"></div>
+						</label>
+						<label for="slide5" class="pagg">
+							<div class="dots"></div>
+						</label>
+					</div>
 				</div>
 			</div>
 		</div>
 	</main>
-	<script src="script.js"></script>
 </body>
 
 </html>

@@ -139,7 +139,8 @@ img {
 #slide1:checked ~ #labels .text1,
 #slide2:checked ~ #labels .text2,
 #slide3:checked ~ #labels .text3,
-#slide4:checked ~ #labels .text4 {
+#slide4:checked ~ #labels .text4,
+#slide5:checked ~ #labels .text5 {
     color: #fff;
     opacity: 1;
     transition: opacity 1s ease-in-out;
@@ -148,7 +149,8 @@ img {
 #slide1:checked ~ #labels #paggination label:nth-child(1) div,
 #slide2:checked ~ #labels #paggination label:nth-child(2) div,
 #slide3:checked ~ #labels #paggination label:nth-child(3) div,
-#slide4:checked ~ #labels #paggination label:nth-child(4) div {
+#slide4:checked ~ #labels #paggination label:nth-child(4) div,
+#slide5:checked ~ #labels #paggination label:nth-child(5) div {
     background-color: transparent;
     border: 0.1em solid #a6d267;
 }
@@ -156,13 +158,15 @@ img {
 #slide1:checked ~ #labels #paggination label:nth-child(1):hover div,
 #slide2:checked ~ #labels #paggination label:nth-child(2):hover div,
 #slide3:checked ~ #labels #paggination label:nth-child(3):hover div,
-#slide4:checked ~ #labels #paggination label:nth-child(4):hover div {
+#slide4:checked ~ #labels #paggination label:nth-child(4):hover div,
+#slide5:checked ~ #labels #paggination label:nth-child(5):hover div {
     border-color: #c3d4aa;
 }
 
 #slide1:active ~ #labels #paggination label:nth-child(1) div,
 #slide2:active ~ #labels #paggination label:nth-child(2) div,
 #slide3:active ~ #labels #paggination label:nth-child(3) div,
-#slide4:active ~ #labels #paggination label:nth-child(4) div {
+#slide4:active ~ #labels #paggination label:nth-child(4) div,
+#slide5:active ~ #labels #paggination label:nth-child(5) div {
     background-color: #a6d267;
 }
